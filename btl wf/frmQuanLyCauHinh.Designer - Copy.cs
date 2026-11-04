@@ -1,6 +1,6 @@
 ﻿namespace btl_wf
 {
-    partial class Form1
+    partial class frmQuanLyCauHinh
     {
         /// <summary>
         /// Required designer variable.
@@ -81,7 +81,8 @@
             // 
             this.lblQLcauhinh.AutoSize = true;
             this.lblQLcauhinh.Font = new System.Drawing.Font("Times New Roman", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQLcauhinh.Location = new System.Drawing.Point(339, 9);
+            this.lblQLcauhinh.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblQLcauhinh.Location = new System.Drawing.Point(599, 9);
             this.lblQLcauhinh.Name = "lblQLcauhinh";
             this.lblQLcauhinh.Size = new System.Drawing.Size(342, 49);
             this.lblQLcauhinh.TabIndex = 0;
@@ -223,7 +224,7 @@
             this.tabPage1.Location = new System.Drawing.Point(8, 45);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1076, 646);
+            this.tabPage1.Size = new System.Drawing.Size(1465, 666);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Bán hàng";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -276,7 +277,7 @@
             this.tabPage3.Location = new System.Drawing.Point(8, 45);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1076, 646);
+            this.tabPage3.Size = new System.Drawing.Size(1465, 666);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "Sao lưu ";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -340,7 +341,7 @@
             this.tabPage4.Controls.Add(this.txtTienToHD);
             this.tabPage4.Location = new System.Drawing.Point(8, 45);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1076, 646);
+            this.tabPage4.Size = new System.Drawing.Size(1465, 666);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Hóa đơn";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -352,7 +353,7 @@
             this.txtTienToHD.Size = new System.Drawing.Size(100, 39);
             this.txtTienToHD.TabIndex = 0;
             // 
-            // Form1
+            // frmQuanLyCauHinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -364,7 +365,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "frmQuanLyCauHinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý cấu hình";
             this.Load += new System.EventHandler(this.Form1_Load);

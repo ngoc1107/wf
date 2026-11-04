@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static btl_wf.frmTrangChu;
 
 namespace btl_wf
 {
@@ -36,6 +37,7 @@ namespace btl_wf
 
         private void btndangnhap_Click(object sender, EventArgs e)
         {
+          
             if (txtten.Text.Trim() == "")
             {
                 MessageBox.Show("Nhập tên đăng nhập!");
@@ -68,14 +70,14 @@ namespace btl_wf
                 return;
             }
 
-            Chucnang f = new Chucnang();
-            this.Hide();
-            f.ShowDialog();
+            // Đăng nhập thành công: lưu phiên rồi trả kết quả về trang chủ
+            PhienDangNhap.DaDangNhap = true;
+            PhienDangNhap.TenDangNhap = dt.Rows[0]["TenDN"].ToString();
 
-            txtmk.Clear();
-            this.Show();
-            txtten.Focus();
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
+        
 
         private void btnthoat_Click(object sender, EventArgs e)
         {

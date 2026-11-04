@@ -16,7 +16,7 @@ namespace btl_wf
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmquanlydanhmuc());
+            Application.Run(new frmTrangChu());
         }
     }
 }

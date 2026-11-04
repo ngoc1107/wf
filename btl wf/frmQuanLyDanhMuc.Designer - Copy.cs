@@ -102,7 +102,7 @@
             // 
             // btnhuy
             // 
-            this.btnhuy.Location = new System.Drawing.Point(546, 247);
+            this.btnhuy.Location = new System.Drawing.Point(565, 247);
             this.btnhuy.Name = "btnhuy";
             this.btnhuy.Size = new System.Drawing.Size(94, 35);
             this.btnhuy.TabIndex = 12;
@@ -134,7 +134,7 @@
             // btnthem
             // 
             this.btnthem.AutoSize = true;
-            this.btnthem.Location = new System.Drawing.Point(110, 247);
+            this.btnthem.Location = new System.Drawing.Point(112, 247);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(94, 35);
             this.btnthem.TabIndex = 9;
@@ -214,6 +214,7 @@
             this.Name = "frmquanlydanhmuc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý danh mục";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmquanlydanhmuc_Load);
             this.grpthongtinsach.ResumeLayout(false);
             this.grpthongtinsach.PerformLayout();

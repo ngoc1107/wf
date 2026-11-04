@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace btl_wf
 {
-    public partial class Form1 : Form
+    public partial class frmQuanLyCauHinh : Form
     {
-        public Form1()
+        public frmQuanLyCauHinh()
         {
             InitializeComponent();
         }

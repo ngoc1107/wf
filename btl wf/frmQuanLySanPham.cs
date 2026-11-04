@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace btl_wf
 {
-    public partial class Chucnang : Form
+    public partial class frmQuanLySanPham : Form
     {
-        public Chucnang()
+        public frmQuanLySanPham()
         {
             InitializeComponent();
         }
