@@ -40,6 +40,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.grbKetQua = new System.Windows.Forms.GroupBox();
             this.dgvKetQua = new System.Windows.Forms.DataGridView();
+            this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTimKiem.SuspendLayout();
             this.grbKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
@@ -80,6 +84,7 @@
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLamMoi
             // 
@@ -89,6 +94,7 @@
             this.btnLamMoi.TabIndex = 5;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnTimKiem
             // 
@@ -98,6 +104,7 @@
             this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTuKhoa
             // 
@@ -153,6 +160,11 @@
             this.dgvKetQua.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKetQua.BackgroundColor = System.Drawing.Color.White;
             this.dgvKetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKetQua.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaSach,
+            this.TacGia,
+            this.TenSach,
+            this.GiaBan});
             this.dgvKetQua.Location = new System.Drawing.Point(6, 21);
             this.dgvKetQua.Name = "dgvKetQua";
             this.dgvKetQua.ReadOnly = true;
@@ -161,6 +173,38 @@
             this.dgvKetQua.RowTemplate.Height = 24;
             this.dgvKetQua.Size = new System.Drawing.Size(597, 139);
             this.dgvKetQua.TabIndex = 0;
+            // 
+            // MaSach
+            // 
+            this.MaSach.DataPropertyName = "MaSach";
+            this.MaSach.HeaderText = "Mã Sách";
+            this.MaSach.MinimumWidth = 6;
+            this.MaSach.Name = "MaSach";
+            this.MaSach.ReadOnly = true;
+            // 
+            // TacGia
+            // 
+            this.TacGia.DataPropertyName = "TacGia";
+            this.TacGia.HeaderText = "Tác giả";
+            this.TacGia.MinimumWidth = 6;
+            this.TacGia.Name = "TacGia";
+            this.TacGia.ReadOnly = true;
+            // 
+            // TenSach
+            // 
+            this.TenSach.DataPropertyName = "TenSach";
+            this.TenSach.HeaderText = "Tên sách";
+            this.TenSach.MinimumWidth = 6;
+            this.TenSach.Name = "TenSach";
+            this.TenSach.ReadOnly = true;
+            // 
+            // GiaBan
+            // 
+            this.GiaBan.DataPropertyName = "GiaBan";
+            this.GiaBan.HeaderText = "Giá bán";
+            this.GiaBan.MinimumWidth = 6;
+            this.GiaBan.Name = "GiaBan";
+            this.GiaBan.ReadOnly = true;
             // 
             // frmTimKiemSach
             // 
@@ -174,6 +218,7 @@
             this.Name = "frmTimKiemSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm Kiếm Sách";
+            this.Load += new System.EventHandler(this.frmTimKiemSach_Load);
             this.grpTimKiem.ResumeLayout(false);
             this.grpTimKiem.PerformLayout();
             this.grbKetQua.ResumeLayout(false);
@@ -196,5 +241,9 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.GroupBox grbKetQua;
         private System.Windows.Forms.DataGridView dgvKetQua;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TacGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
     }
 }

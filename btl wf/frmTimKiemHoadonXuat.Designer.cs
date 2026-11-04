@@ -44,6 +44,11 @@
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvHoaDonXuat = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.MaHDXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTimKiem.SuspendLayout();
             this.grpKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDonXuat)).BeginInit();
@@ -184,7 +189,13 @@
             this.dgvHoaDonXuat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHoaDonXuat.BackgroundColor = System.Drawing.Color.White;
             this.dgvHoaDonXuat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHoaDonXuat.Location = new System.Drawing.Point(26, 38);
+            this.dgvHoaDonXuat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaHDXuat,
+            this.NgayLap,
+            this.MaKH,
+            this.MaNV,
+            this.Tongtien});
+            this.dgvHoaDonXuat.Location = new System.Drawing.Point(6, 32);
             this.dgvHoaDonXuat.MultiSelect = false;
             this.dgvHoaDonXuat.Name = "dgvHoaDonXuat";
             this.dgvHoaDonXuat.ReadOnly = true;
@@ -192,7 +203,7 @@
             this.dgvHoaDonXuat.RowHeadersWidth = 51;
             this.dgvHoaDonXuat.RowTemplate.Height = 24;
             this.dgvHoaDonXuat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHoaDonXuat.Size = new System.Drawing.Size(748, 113);
+            this.dgvHoaDonXuat.Size = new System.Drawing.Size(790, 133);
             this.dgvHoaDonXuat.TabIndex = 0;
             // 
             // label1
@@ -205,6 +216,41 @@
             this.label1.Size = new System.Drawing.Size(377, 32);
             this.label1.TabIndex = 2;
             this.label1.Text = "TÌM KIẾM HÓA ĐƠN XUẤT";
+            // 
+            // MaHDXuat
+            // 
+            this.MaHDXuat.HeaderText = "Mã hóa đơn xuất";
+            this.MaHDXuat.MinimumWidth = 6;
+            this.MaHDXuat.Name = "MaHDXuat";
+            this.MaHDXuat.ReadOnly = true;
+            // 
+            // NgayLap
+            // 
+            this.NgayLap.HeaderText = "Ngày lập";
+            this.NgayLap.MinimumWidth = 6;
+            this.NgayLap.Name = "NgayLap";
+            this.NgayLap.ReadOnly = true;
+            // 
+            // MaKH
+            // 
+            this.MaKH.HeaderText = "Mã khách hàng";
+            this.MaKH.MinimumWidth = 6;
+            this.MaKH.Name = "MaKH";
+            this.MaKH.ReadOnly = true;
+            // 
+            // MaNV
+            // 
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.MinimumWidth = 6;
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            // 
+            // Tongtien
+            // 
+            this.Tongtien.HeaderText = "Tổng tiền";
+            this.Tongtien.MinimumWidth = 6;
+            this.Tongtien.Name = "Tongtien";
+            this.Tongtien.ReadOnly = true;
             // 
             // frmTimKiemHoadonXuat
             // 
@@ -244,5 +290,10 @@
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.DataGridView dgvHoaDonXuat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHDXuat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayLap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tongtien;
     }
 }

@@ -40,6 +40,11 @@
             this.cboTimTheo = new System.Windows.Forms.ComboBox();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTimKiem.SuspendLayout();
             this.grpKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
@@ -153,6 +158,12 @@
             this.dgvKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKhachHang.BackgroundColor = System.Drawing.Color.White;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaKH,
+            this.TenKH,
+            this.GioiTinh,
+            this.SoDienThoai,
+            this.DiaChi});
             this.dgvKhachHang.Location = new System.Drawing.Point(7, 33);
             this.dgvKhachHang.MultiSelect = false;
             this.dgvKhachHang.Name = "dgvKhachHang";
@@ -161,8 +172,43 @@
             this.dgvKhachHang.RowHeadersWidth = 51;
             this.dgvKhachHang.RowTemplate.Height = 24;
             this.dgvKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKhachHang.Size = new System.Drawing.Size(635, 90);
+            this.dgvKhachHang.Size = new System.Drawing.Size(737, 112);
             this.dgvKhachHang.TabIndex = 0;
+            // 
+            // MaKH
+            // 
+            this.MaKH.HeaderText = "Mã khách hàng";
+            this.MaKH.MinimumWidth = 6;
+            this.MaKH.Name = "MaKH";
+            this.MaKH.ReadOnly = true;
+            // 
+            // TenKH
+            // 
+            this.TenKH.HeaderText = "Tên khách hàng";
+            this.TenKH.MinimumWidth = 6;
+            this.TenKH.Name = "TenKH";
+            this.TenKH.ReadOnly = true;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            // 
+            // SoDienThoai
+            // 
+            this.SoDienThoai.HeaderText = "Số điện thoại";
+            this.SoDienThoai.MinimumWidth = 6;
+            this.SoDienThoai.Name = "SoDienThoai";
+            this.SoDienThoai.ReadOnly = true;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
             // 
             // frmTimKiemKhachHang
             // 
@@ -198,5 +244,10 @@
         private System.Windows.Forms.ComboBox cboTimTheo;
         private System.Windows.Forms.GroupBox grpKetQua;
         private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
     }
 }

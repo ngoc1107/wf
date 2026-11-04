@@ -41,6 +41,11 @@
             this.cboQuy = new System.Windows.Forms.ComboBox();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvDoanhThuTheoQuy = new System.Windows.Forms.DataGridView();
+            this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpDieuKien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNam)).BeginInit();
             this.grpKetQua.SuspendLayout();
@@ -181,6 +186,12 @@
             this.dgvDoanhThuTheoQuy.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDoanhThuTheoQuy.BackgroundColor = System.Drawing.Color.White;
             this.dgvDoanhThuTheoQuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDoanhThuTheoQuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaHD,
+            this.NgayLap,
+            this.TenKH,
+            this.TenNV,
+            this.Tongtien});
             this.dgvDoanhThuTheoQuy.Location = new System.Drawing.Point(7, 38);
             this.dgvDoanhThuTheoQuy.MultiSelect = false;
             this.dgvDoanhThuTheoQuy.Name = "dgvDoanhThuTheoQuy";
@@ -188,9 +199,43 @@
             this.dgvDoanhThuTheoQuy.RowHeadersVisible = false;
             this.dgvDoanhThuTheoQuy.RowHeadersWidth = 51;
             this.dgvDoanhThuTheoQuy.RowTemplate.Height = 24;
-            this.dgvDoanhThuTheoQuy.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDoanhThuTheoQuy.Size = new System.Drawing.Size(869, 214);
             this.dgvDoanhThuTheoQuy.TabIndex = 0;
+            // 
+            // MaHD
+            // 
+            this.MaHD.HeaderText = "Mã hóa đơn";
+            this.MaHD.MinimumWidth = 6;
+            this.MaHD.Name = "MaHD";
+            this.MaHD.ReadOnly = true;
+            // 
+            // NgayLap
+            // 
+            this.NgayLap.HeaderText = "Ngày lập";
+            this.NgayLap.MinimumWidth = 6;
+            this.NgayLap.Name = "NgayLap";
+            this.NgayLap.ReadOnly = true;
+            // 
+            // TenKH
+            // 
+            this.TenKH.HeaderText = "Tên khách hàng";
+            this.TenKH.MinimumWidth = 6;
+            this.TenKH.Name = "TenKH";
+            this.TenKH.ReadOnly = true;
+            // 
+            // TenNV
+            // 
+            this.TenNV.HeaderText = "Tên nhân viên";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            this.TenNV.ReadOnly = true;
+            // 
+            // Tongtien
+            // 
+            this.Tongtien.HeaderText = "Tổng tiền";
+            this.Tongtien.MinimumWidth = 6;
+            this.Tongtien.Name = "Tongtien";
+            this.Tongtien.ReadOnly = true;
             // 
             // frmDoanhThuTheoQuy
             // 
@@ -228,5 +273,10 @@
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.DataGridView dgvDoanhThuTheoQuy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayLap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tongtien;
     }
 }

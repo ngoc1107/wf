@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using giaodien;
 
 namespace btl_wf
 {
@@ -46,17 +47,20 @@ namespace btl_wf
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmTimKiemNhanVien f = new frmTimKiemNhanVien();
+            f.ShowDialog();
         }
 
         private void doanhThuTheoNàyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmDoanhThuTheoNgay f = new frmDoanhThuTheoNgay();
+            f.ShowDialog();
         }
 
         private void sảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmBaoCaoSanPhamTonKho f = new frmBaoCaoSanPhamTonKho();
+            f.ShowDialog();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -174,6 +178,79 @@ namespace btl_wf
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void sảnPhẩmBánChạyNhấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThongKeSPBanChayNhat f = new frmThongKeSPBanChayNhat();
+            f.ShowDialog();
+        }
+
+        private void sảnPhẩmTồnKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThongKeSanPhamTonKho f = new frmThongKeSanPhamTonKho();
+            f.ShowDialog();
+        }
+
+        private void tìmKiếmSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiemSach f = new frmTimKiemSach();
+            f.ShowDialog();
+        }
+
+        private void tìmDanhMụcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiemDanhMuc f = new frmTimKiemDanhMuc();
+            f.ShowDialog();
+        }
+
+        private void tìmKiếmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiemKhachHang f = new frmTimKiemKhachHang();
+            f.ShowDialog();
+        }
+
+        private void tìmKiếmHóaĐơnXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiemHoadonXuat f = new frmTimKiemHoadonXuat();
+            f.ShowDialog();
+
+        }
+
+        private void tìmKiếmHóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiemHoaDonNhap f = new frmTimKiemHoaDonNhap();
+            f.ShowDialog();
+        }
+
+        private void danhMụcSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoDanhMuc f = new frmBaoCaoDanhMuc();
+            f.ShowDialog();
+        }
+
+        private void sảnPhẩmBánChạyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoSanPhamBanChay f = new frmBaoCaoSanPhamBanChay();
+            f.ShowDialog();
+        }
+
+        private void doanhThuTheoThángToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoanhThuTheoThang f = new frmDoanhThuTheoThang();
+            f.ShowDialog();
+        }
+
+        private void doanhThuTheoQuýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoanhThuTheoQuy f = new frmDoanhThuTheoQuy();
+            f.ShowDialog();
+        }
+
+        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTroGiup f = new frmTroGiup();
+            f.ShowDialog();
         }
     }
 }

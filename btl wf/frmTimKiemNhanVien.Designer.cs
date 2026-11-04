@@ -40,6 +40,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTimKiem.SuspendLayout();
             this.grpKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -153,7 +160,15 @@
             this.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhanVien.Location = new System.Drawing.Point(25, 32);
+            this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaNV,
+            this.TenNV,
+            this.Gioitinh,
+            this.NgaySinh,
+            this.SoDienThoai,
+            this.DiaChi,
+            this.ChucVu});
+            this.dgvNhanVien.Location = new System.Drawing.Point(0, 32);
             this.dgvNhanVien.MultiSelect = false;
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.ReadOnly = true;
@@ -161,8 +176,57 @@
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(671, 133);
+            this.dgvNhanVien.Size = new System.Drawing.Size(754, 133);
             this.dgvNhanVien.TabIndex = 0;
+            // 
+            // MaNV
+            // 
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.MinimumWidth = 6;
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            // 
+            // TenNV
+            // 
+            this.TenNV.HeaderText = "Tên nhân viên";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            this.TenNV.ReadOnly = true;
+            // 
+            // Gioitinh
+            // 
+            this.Gioitinh.HeaderText = "Giới tính";
+            this.Gioitinh.MinimumWidth = 6;
+            this.Gioitinh.Name = "Gioitinh";
+            this.Gioitinh.ReadOnly = true;
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.HeaderText = "Ngày sinh";
+            this.NgaySinh.MinimumWidth = 6;
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.ReadOnly = true;
+            // 
+            // SoDienThoai
+            // 
+            this.SoDienThoai.HeaderText = "Số điện thoại";
+            this.SoDienThoai.MinimumWidth = 6;
+            this.SoDienThoai.Name = "SoDienThoai";
+            this.SoDienThoai.ReadOnly = true;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.HeaderText = "Chức Vụ";
+            this.ChucVu.MinimumWidth = 6;
+            this.ChucVu.Name = "ChucVu";
+            this.ChucVu.ReadOnly = true;
             // 
             // frmTimKiemNhanVien
             // 
@@ -198,5 +262,12 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.GroupBox grpKetQua;
         private System.Windows.Forms.DataGridView dgvNhanVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gioitinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ChucVu;
     }
 }

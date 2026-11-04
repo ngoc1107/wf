@@ -42,7 +42,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
+            this.dgvKetQua = new System.Windows.Forms.DataGridView();
+            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongDoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpDieuKien.SuspendLayout();
+            this.grpKetQua.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -166,12 +175,79 @@
             // 
             // grpKetQua
             // 
+            this.grpKetQua.Controls.Add(this.dgvKetQua);
             this.grpKetQua.Location = new System.Drawing.Point(56, 279);
             this.grpKetQua.Name = "grpKetQua";
             this.grpKetQua.Size = new System.Drawing.Size(885, 249);
             this.grpKetQua.TabIndex = 2;
             this.grpKetQua.TabStop = false;
             this.grpKetQua.Text = "Kết quả báo cáo";
+            // 
+            // dgvKetQua
+            // 
+            this.dgvKetQua.AllowUserToAddRows = false;
+            this.dgvKetQua.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvKetQua.BackgroundColor = System.Drawing.Color.White;
+            this.dgvKetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKetQua.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaSP,
+            this.TenSP,
+            this.TenDanhMuc,
+            this.GiaBan,
+            this.SoLuongBan,
+            this.TongDoanhThu});
+            this.dgvKetQua.Location = new System.Drawing.Point(16, 32);
+            this.dgvKetQua.MultiSelect = false;
+            this.dgvKetQua.Name = "dgvKetQua";
+            this.dgvKetQua.ReadOnly = true;
+            this.dgvKetQua.RowHeadersVisible = false;
+            this.dgvKetQua.RowHeadersWidth = 51;
+            this.dgvKetQua.RowTemplate.Height = 24;
+            this.dgvKetQua.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvKetQua.Size = new System.Drawing.Size(863, 211);
+            this.dgvKetQua.TabIndex = 0;
+            // 
+            // MaSP
+            // 
+            this.MaSP.HeaderText = "Mã sản phẩm";
+            this.MaSP.MinimumWidth = 6;
+            this.MaSP.Name = "MaSP";
+            this.MaSP.ReadOnly = true;
+            // 
+            // TenSP
+            // 
+            this.TenSP.HeaderText = "Tên sản phẩm";
+            this.TenSP.MinimumWidth = 6;
+            this.TenSP.Name = "TenSP";
+            this.TenSP.ReadOnly = true;
+            // 
+            // TenDanhMuc
+            // 
+            this.TenDanhMuc.HeaderText = "Tên Danh Mục";
+            this.TenDanhMuc.MinimumWidth = 6;
+            this.TenDanhMuc.Name = "TenDanhMuc";
+            this.TenDanhMuc.ReadOnly = true;
+            // 
+            // GiaBan
+            // 
+            this.GiaBan.HeaderText = "Giá bán";
+            this.GiaBan.MinimumWidth = 6;
+            this.GiaBan.Name = "GiaBan";
+            this.GiaBan.ReadOnly = true;
+            // 
+            // SoLuongBan
+            // 
+            this.SoLuongBan.HeaderText = "Số lượng bán";
+            this.SoLuongBan.MinimumWidth = 6;
+            this.SoLuongBan.Name = "SoLuongBan";
+            this.SoLuongBan.ReadOnly = true;
+            // 
+            // TongDoanhThu
+            // 
+            this.TongDoanhThu.HeaderText = "Tổng doanh thu";
+            this.TongDoanhThu.MinimumWidth = 6;
+            this.TongDoanhThu.Name = "TongDoanhThu";
+            this.TongDoanhThu.ReadOnly = true;
             // 
             // frmBaoCaoSanPhamBanChay
             // 
@@ -187,6 +263,8 @@
             this.Text = "Báo cáo sản phẩm bán chạy";
             this.grpDieuKien.ResumeLayout(false);
             this.grpDieuKien.PerformLayout();
+            this.grpKetQua.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +285,12 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox grpKetQua;
+        private System.Windows.Forms.DataGridView dgvKetQua;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDanhMuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongDoanhThu;
     }
 }

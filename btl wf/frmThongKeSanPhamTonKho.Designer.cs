@@ -41,6 +41,14 @@
             this.cboDanhMuc = new System.Windows.Forms.ComboBox();
             this.grbKetQua = new System.Windows.Forms.GroupBox();
             this.dgvTonKho = new System.Windows.Forms.DataGridView();
+            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaTriTonKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpDieuKien.SuspendLayout();
             this.grbKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTonKho)).BeginInit();
@@ -164,7 +172,17 @@
             // 
             this.dgvTonKho.AllowUserToAddRows = false;
             this.dgvTonKho.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTonKho.BackgroundColor = System.Drawing.Color.White;
             this.dgvTonKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTonKho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaSP,
+            this.TenSP,
+            this.TenDanhMuc,
+            this.SoLuongTon,
+            this.GiaNhap,
+            this.GiaBan,
+            this.GiaTriTonKho,
+            this.TrangThai});
             this.dgvTonKho.Location = new System.Drawing.Point(19, 22);
             this.dgvTonKho.MultiSelect = false;
             this.dgvTonKho.Name = "dgvTonKho";
@@ -174,6 +192,62 @@
             this.dgvTonKho.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTonKho.Size = new System.Drawing.Size(807, 247);
             this.dgvTonKho.TabIndex = 0;
+            // 
+            // MaSP
+            // 
+            this.MaSP.HeaderText = "Mã sản phẩm";
+            this.MaSP.MinimumWidth = 6;
+            this.MaSP.Name = "MaSP";
+            this.MaSP.ReadOnly = true;
+            // 
+            // TenSP
+            // 
+            this.TenSP.HeaderText = "Tên sản phẩm";
+            this.TenSP.MinimumWidth = 6;
+            this.TenSP.Name = "TenSP";
+            this.TenSP.ReadOnly = true;
+            // 
+            // TenDanhMuc
+            // 
+            this.TenDanhMuc.HeaderText = "Danh mục";
+            this.TenDanhMuc.MinimumWidth = 6;
+            this.TenDanhMuc.Name = "TenDanhMuc";
+            this.TenDanhMuc.ReadOnly = true;
+            // 
+            // SoLuongTon
+            // 
+            this.SoLuongTon.HeaderText = "Số lượng tồn";
+            this.SoLuongTon.MinimumWidth = 6;
+            this.SoLuongTon.Name = "SoLuongTon";
+            this.SoLuongTon.ReadOnly = true;
+            // 
+            // GiaNhap
+            // 
+            this.GiaNhap.HeaderText = "Giá nhập";
+            this.GiaNhap.MinimumWidth = 6;
+            this.GiaNhap.Name = "GiaNhap";
+            this.GiaNhap.ReadOnly = true;
+            // 
+            // GiaBan
+            // 
+            this.GiaBan.HeaderText = "GiaBan";
+            this.GiaBan.MinimumWidth = 6;
+            this.GiaBan.Name = "GiaBan";
+            this.GiaBan.ReadOnly = true;
+            // 
+            // GiaTriTonKho
+            // 
+            this.GiaTriTonKho.HeaderText = "Giá trị tồn kho";
+            this.GiaTriTonKho.MinimumWidth = 6;
+            this.GiaTriTonKho.Name = "GiaTriTonKho";
+            this.GiaTriTonKho.ReadOnly = true;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.HeaderText = "Trạng thái";
+            this.TrangThai.MinimumWidth = 6;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.ReadOnly = true;
             // 
             // frmThongKeSanPhamTonKho
             // 
@@ -210,5 +284,13 @@
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.DataGridView dgvTonKho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDanhMuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaTriTonKho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
     }
 }

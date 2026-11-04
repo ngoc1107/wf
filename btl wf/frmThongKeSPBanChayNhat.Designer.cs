@@ -43,6 +43,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvBanChay = new System.Windows.Forms.DataGridView();
+            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongDoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpDieuKien.SuspendLayout();
             this.grpKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBanChay)).BeginInit();
@@ -184,6 +190,13 @@
             this.dgvBanChay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBanChay.BackgroundColor = System.Drawing.Color.White;
             this.dgvBanChay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBanChay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaSP,
+            this.TenSP,
+            this.TenDanhMuc,
+            this.GiaBan,
+            this.SoLuongBan,
+            this.TongDoanhThu});
             this.dgvBanChay.Location = new System.Drawing.Point(31, 22);
             this.dgvBanChay.MultiSelect = false;
             this.dgvBanChay.Name = "dgvBanChay";
@@ -193,6 +206,48 @@
             this.dgvBanChay.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBanChay.Size = new System.Drawing.Size(849, 243);
             this.dgvBanChay.TabIndex = 0;
+            // 
+            // MaSP
+            // 
+            this.MaSP.HeaderText = "Mã sản phẩm";
+            this.MaSP.MinimumWidth = 6;
+            this.MaSP.Name = "MaSP";
+            this.MaSP.ReadOnly = true;
+            // 
+            // TenSP
+            // 
+            this.TenSP.HeaderText = "Tên sản phẩm";
+            this.TenSP.MinimumWidth = 6;
+            this.TenSP.Name = "TenSP";
+            this.TenSP.ReadOnly = true;
+            // 
+            // TenDanhMuc
+            // 
+            this.TenDanhMuc.HeaderText = "Danh mục";
+            this.TenDanhMuc.MinimumWidth = 6;
+            this.TenDanhMuc.Name = "TenDanhMuc";
+            this.TenDanhMuc.ReadOnly = true;
+            // 
+            // GiaBan
+            // 
+            this.GiaBan.HeaderText = "Giá bán";
+            this.GiaBan.MinimumWidth = 6;
+            this.GiaBan.Name = "GiaBan";
+            this.GiaBan.ReadOnly = true;
+            // 
+            // SoLuongBan
+            // 
+            this.SoLuongBan.HeaderText = "Số lượng đã bán";
+            this.SoLuongBan.MinimumWidth = 6;
+            this.SoLuongBan.Name = "SoLuongBan";
+            this.SoLuongBan.ReadOnly = true;
+            // 
+            // TongDoanhThu
+            // 
+            this.TongDoanhThu.HeaderText = "Tổng doanh thu";
+            this.TongDoanhThu.MinimumWidth = 6;
+            this.TongDoanhThu.Name = "TongDoanhThu";
+            this.TongDoanhThu.ReadOnly = true;
             // 
             // frmThongKeSPBanChayNhat
             // 
@@ -231,5 +286,11 @@
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.ComboBox cboTop;
         private System.Windows.Forms.DataGridView dgvBanChay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDanhMuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongDoanhThu;
     }
 }

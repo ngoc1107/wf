@@ -40,6 +40,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvDanhMuc = new System.Windows.Forms.DataGridView();
+            this.MaDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTimKiem.SuspendLayout();
             this.grpKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMuc)).BeginInit();
@@ -152,6 +154,9 @@
             this.dgvDanhMuc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhMuc.BackgroundColor = System.Drawing.Color.White;
             this.dgvDanhMuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDanhMuc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaDanhMuc,
+            this.TenDanhMuc});
             this.dgvDanhMuc.Location = new System.Drawing.Point(19, 22);
             this.dgvDanhMuc.MultiSelect = false;
             this.dgvDanhMuc.Name = "dgvDanhMuc";
@@ -159,9 +164,23 @@
             this.dgvDanhMuc.RowHeadersVisible = false;
             this.dgvDanhMuc.RowHeadersWidth = 51;
             this.dgvDanhMuc.RowTemplate.Height = 24;
-            this.dgvDanhMuc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
+            this.dgvDanhMuc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDanhMuc.Size = new System.Drawing.Size(612, 111);
             this.dgvDanhMuc.TabIndex = 0;
+            // 
+            // MaDanhMuc
+            // 
+            this.MaDanhMuc.HeaderText = "Mã danh mục";
+            this.MaDanhMuc.MinimumWidth = 6;
+            this.MaDanhMuc.Name = "MaDanhMuc";
+            this.MaDanhMuc.ReadOnly = true;
+            // 
+            // TenDanhMuc
+            // 
+            this.TenDanhMuc.HeaderText = "Tên danh mục";
+            this.TenDanhMuc.MinimumWidth = 6;
+            this.TenDanhMuc.Name = "TenDanhMuc";
+            this.TenDanhMuc.ReadOnly = true;
             // 
             // frmTimKiemDanhMuc
             // 
@@ -197,5 +216,7 @@
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.GroupBox grpKetQua;
         private System.Windows.Forms.DataGridView dgvDanhMuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDanhMuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDanhMuc;
     }
 }

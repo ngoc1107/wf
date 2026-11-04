@@ -44,6 +44,11 @@
             this.cboTimTheo = new System.Windows.Forms.ComboBox();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvHoaDonNhap = new System.Windows.Forms.DataGridView();
+            this.MaHDNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTimKiem.SuspendLayout();
             this.grpKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDonNhap)).BeginInit();
@@ -193,6 +198,12 @@
             this.dgvHoaDonNhap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHoaDonNhap.BackgroundColor = System.Drawing.Color.White;
             this.dgvHoaDonNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHoaDonNhap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaHDNhap,
+            this.NgayNhap,
+            this.MaNCC,
+            this.MaNV,
+            this.Tongtien});
             this.dgvHoaDonNhap.Location = new System.Drawing.Point(16, 47);
             this.dgvHoaDonNhap.MultiSelect = false;
             this.dgvHoaDonNhap.Name = "dgvHoaDonNhap";
@@ -200,9 +211,43 @@
             this.dgvHoaDonNhap.RowHeadersVisible = false;
             this.dgvHoaDonNhap.RowHeadersWidth = 51;
             this.dgvHoaDonNhap.RowTemplate.Height = 24;
-            this.dgvHoaDonNhap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHoaDonNhap.Size = new System.Drawing.Size(782, 150);
             this.dgvHoaDonNhap.TabIndex = 0;
+            // 
+            // MaHDNhap
+            // 
+            this.MaHDNhap.HeaderText = "Mã hóa đơn nhập";
+            this.MaHDNhap.MinimumWidth = 6;
+            this.MaHDNhap.Name = "MaHDNhap";
+            this.MaHDNhap.ReadOnly = true;
+            // 
+            // NgayNhap
+            // 
+            this.NgayNhap.HeaderText = "Ngày nhập";
+            this.NgayNhap.MinimumWidth = 6;
+            this.NgayNhap.Name = "NgayNhap";
+            this.NgayNhap.ReadOnly = true;
+            // 
+            // MaNCC
+            // 
+            this.MaNCC.HeaderText = "Mã nhà cung cấp";
+            this.MaNCC.MinimumWidth = 6;
+            this.MaNCC.Name = "MaNCC";
+            this.MaNCC.ReadOnly = true;
+            // 
+            // MaNV
+            // 
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.MinimumWidth = 6;
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            // 
+            // Tongtien
+            // 
+            this.Tongtien.HeaderText = "Tổng tiền";
+            this.Tongtien.MinimumWidth = 6;
+            this.Tongtien.Name = "Tongtien";
+            this.Tongtien.ReadOnly = true;
             // 
             // frmTimKiemHoaDonNhap
             // 
@@ -242,5 +287,10 @@
         private System.Windows.Forms.DateTimePicker dtpTuNgay;
         private System.Windows.Forms.GroupBox grpKetQua;
         private System.Windows.Forms.DataGridView dgvHoaDonNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHDNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tongtien;
     }
 }

@@ -39,6 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvBaoCaoDanhMuc = new System.Windows.Forms.DataGridView();
+            this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpDieuKien.SuspendLayout();
             this.grpKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCaoDanhMuc)).BeginInit();
@@ -140,6 +146,13 @@
             this.dgvBaoCaoDanhMuc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBaoCaoDanhMuc.BackgroundColor = System.Drawing.Color.White;
             this.dgvBaoCaoDanhMuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBaoCaoDanhMuc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaSach,
+            this.TenSach,
+            this.TenDanhMuc,
+            this.DonViTinh,
+            this.GiaBan,
+            this.SoLuongTon});
             this.dgvBaoCaoDanhMuc.Location = new System.Drawing.Point(9, 37);
             this.dgvBaoCaoDanhMuc.MultiSelect = false;
             this.dgvBaoCaoDanhMuc.Name = "dgvBaoCaoDanhMuc";
@@ -150,6 +163,48 @@
             this.dgvBaoCaoDanhMuc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBaoCaoDanhMuc.Size = new System.Drawing.Size(937, 216);
             this.dgvBaoCaoDanhMuc.TabIndex = 0;
+            // 
+            // MaSach
+            // 
+            this.MaSach.HeaderText = "Mã sách";
+            this.MaSach.MinimumWidth = 6;
+            this.MaSach.Name = "MaSach";
+            this.MaSach.ReadOnly = true;
+            // 
+            // TenSach
+            // 
+            this.TenSach.HeaderText = "Tên sách";
+            this.TenSach.MinimumWidth = 6;
+            this.TenSach.Name = "TenSach";
+            this.TenSach.ReadOnly = true;
+            // 
+            // TenDanhMuc
+            // 
+            this.TenDanhMuc.HeaderText = "Tên danh mục";
+            this.TenDanhMuc.MinimumWidth = 6;
+            this.TenDanhMuc.Name = "TenDanhMuc";
+            this.TenDanhMuc.ReadOnly = true;
+            // 
+            // DonViTinh
+            // 
+            this.DonViTinh.HeaderText = "Đơn vị tính";
+            this.DonViTinh.MinimumWidth = 6;
+            this.DonViTinh.Name = "DonViTinh";
+            this.DonViTinh.ReadOnly = true;
+            // 
+            // GiaBan
+            // 
+            this.GiaBan.HeaderText = "Giá bán";
+            this.GiaBan.MinimumWidth = 6;
+            this.GiaBan.Name = "GiaBan";
+            this.GiaBan.ReadOnly = true;
+            // 
+            // SoLuongTon
+            // 
+            this.SoLuongTon.HeaderText = "Số lượng tồn";
+            this.SoLuongTon.MinimumWidth = 6;
+            this.SoLuongTon.Name = "SoLuongTon";
+            this.SoLuongTon.ReadOnly = true;
             // 
             // frmBaoCaoDanhMuc
             // 
@@ -183,5 +238,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grpKetQua;
         private System.Windows.Forms.DataGridView dgvBaoCaoDanhMuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDanhMuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTon;
     }
 }
