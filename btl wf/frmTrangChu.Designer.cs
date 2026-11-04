@@ -308,7 +308,7 @@
             this.sảnPhẩmBánChạyToolStripMenuItem,
             this.sảnToolStripMenuItem});
             this.báoCáoToolStripMenuItem1.Name = "báoCáoToolStripMenuItem1";
-            this.báoCáoToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.báoCáoToolStripMenuItem1.Size = new System.Drawing.Size(161, 26);
             this.báoCáoToolStripMenuItem1.Text = "Báo cáo";
             // 
             // danhMụcSảnPhẩmToolStripMenuItem
@@ -339,7 +339,7 @@
             this.doanhThuTheoThángToolStripMenuItem,
             this.doanhThuTheoQuýToolStripMenuItem});
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.doanhThuToolStripMenuItem.Text = "Doanh thu";
             // 
             // doanhThuTheoNàyToolStripMenuItem
@@ -369,7 +369,7 @@
             this.sảnPhẩmBánChạyNhấtToolStripMenuItem,
             this.sảnPhẩmTồnKhoToolStripMenuItem});
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.thốngKêToolStripMenuItem.Text = "Thống kê";
             // 
             // sảnPhẩmBánChạyNhấtToolStripMenuItem
@@ -476,7 +476,7 @@
             this.pnlChaoMung.Controls.Add(this.lblKhauHieu);
             this.pnlChaoMung.Controls.Add(this.lbltieude);
             this.pnlChaoMung.Location = new System.Drawing.Point(8, 70);
-            this.pnlChaoMung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlChaoMung.Margin = new System.Windows.Forms.Padding(2);
             this.pnlChaoMung.Name = "pnlChaoMung";
             this.pnlChaoMung.Size = new System.Drawing.Size(1280, 77);
             this.pnlChaoMung.TabIndex = 2;
@@ -513,7 +513,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picbanner.Image = ((System.Drawing.Image)(resources.GetObject("picbanner.Image")));
             this.picbanner.Location = new System.Drawing.Point(-9, 151);
-            this.picbanner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picbanner.Margin = new System.Windows.Forms.Padding(2);
             this.picbanner.Name = "picbanner";
             this.picbanner.Size = new System.Drawing.Size(2048, 768);
             this.picbanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -531,7 +531,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ CỦA HÀNG BÁN SÁCH";
