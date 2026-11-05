@@ -64,7 +64,7 @@ namespace btl_wf
                 return;
             }
 
-            if (dt.Rows[0]["TrangThai"].ToString() == "Đã khóa")
+            if (dt.Rows[0]["TenTrangThai"].ToString() == "Đã khóa")
             {
                 MessageBox.Show("Tài khoản đã bị khóa, liên hệ quản trị viên!");
                 return;

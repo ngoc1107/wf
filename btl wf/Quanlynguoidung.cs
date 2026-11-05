@@ -44,8 +44,8 @@ namespace btl_wf
         {
             DataTable dt = db.LayDuLieu(
                 @"SELECT Ma AS [Mã người dùng], HoTen AS [Họ tên],
-                         TenDN AS [Tên đăng nhập], VaiTro AS [Vai trò],
-                         TrangThai AS [Trạng thái]
+                         TenDN AS [Tên đăng nhập], TenVaiTro AS [Vai trò],
+                         TenTrangThai AS [Trạng thái]
                   FROM NguoiDung");
             dgvdanhsach.DataSource = dt;
 
@@ -120,8 +120,8 @@ namespace btl_wf
 
             db.ThucThi("UPDATE NguoiDung SET HoTen = N'" + Q(txthoten.Text) +
                        "', TenDN = N'" + Q(txttendangnhap.Text) +
-                       "', VaiTro = N'" + Q(cbovaitro.Text) +
-                       "', TrangThai = N'" + Q(cbotrangthai.Text) +
+                       "', TenVaiTro = N'" + Q(cbovaitro.Text) +
+                       "', TenTrangThai = N'" + Q(cbotrangthai.Text) +
                        "' WHERE Ma = N'" + Q(txtmanguoidung.Text) + "'");
 
             MessageBox.Show("Đã cập nhật.");

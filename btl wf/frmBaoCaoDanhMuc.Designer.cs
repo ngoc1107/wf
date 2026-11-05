@@ -30,24 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBaoCaoDanhMuc));
             this.label1 = new System.Windows.Forms.Label();
-            this.grpDieuKien = new System.Windows.Forms.GroupBox();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.btnXuatExcel = new System.Windows.Forms.Button();
-            this.btnLamMoi = new System.Windows.Forms.Button();
-            this.btnThongKe = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.grpKetQua = new System.Windows.Forms.GroupBox();
-            this.dgvBaoCaoDanhMuc = new System.Windows.Forms.DataGridView();
-            this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grpDieuKien.SuspendLayout();
-            this.grpKetQua.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCaoDanhMuc)).BeginInit();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.rptBaoCaoDanhMuc1 = new btl_wf.rptBaoCaoDanhMuc();
             this.SuspendLayout();
             // 
             // label1
@@ -56,172 +40,34 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label1.Location = new System.Drawing.Point(15, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(950, 40);
+            this.label1.Size = new System.Drawing.Size(916, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "BÁO CÁO THEO DANH MỤC SẢN PHẨM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // grpDieuKien
+            // crystalReportViewer1
             // 
-            this.grpDieuKien.Controls.Add(this.btnThoat);
-            this.grpDieuKien.Controls.Add(this.btnXuatExcel);
-            this.grpDieuKien.Controls.Add(this.btnLamMoi);
-            this.grpDieuKien.Controls.Add(this.btnThongKe);
-            this.grpDieuKien.Controls.Add(this.comboBox1);
-            this.grpDieuKien.Controls.Add(this.label2);
-            this.grpDieuKien.Location = new System.Drawing.Point(15, 65);
-            this.grpDieuKien.Name = "grpDieuKien";
-            this.grpDieuKien.Size = new System.Drawing.Size(950, 144);
-            this.grpDieuKien.TabIndex = 1;
-            this.grpDieuKien.TabStop = false;
-            this.grpDieuKien.Text = "ĐIỀU KIỆN BÁO CÁO";
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(655, 69);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(100, 35);
-            this.btnThoat.TabIndex = 3;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            // 
-            // btnXuatExcel
-            // 
-            this.btnXuatExcel.Location = new System.Drawing.Point(460, 69);
-            this.btnXuatExcel.Name = "btnXuatExcel";
-            this.btnXuatExcel.Size = new System.Drawing.Size(100, 35);
-            this.btnXuatExcel.TabIndex = 4;
-            this.btnXuatExcel.Text = "Xuất Excel";
-            this.btnXuatExcel.UseVisualStyleBackColor = true;
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.Location = new System.Drawing.Point(278, 69);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(100, 35);
-            this.btnLamMoi.TabIndex = 3;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.Location = new System.Drawing.Point(77, 69);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(100, 35);
-            this.btnThongKe.TabIndex = 2;
-            this.btnThongKe.Text = "Thống kê";
-            this.btnThongKe.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(204, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(312, 24);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(75, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Chọn danh mục:";
-            // 
-            // grpKetQua
-            // 
-            this.grpKetQua.Controls.Add(this.dgvBaoCaoDanhMuc);
-            this.grpKetQua.Location = new System.Drawing.Point(12, 227);
-            this.grpKetQua.Name = "grpKetQua";
-            this.grpKetQua.Size = new System.Drawing.Size(952, 272);
-            this.grpKetQua.TabIndex = 2;
-            this.grpKetQua.TabStop = false;
-            this.grpKetQua.Text = "Kết quả báo cáo";
-            // 
-            // dgvBaoCaoDanhMuc
-            // 
-            this.dgvBaoCaoDanhMuc.AllowUserToAddRows = false;
-            this.dgvBaoCaoDanhMuc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBaoCaoDanhMuc.BackgroundColor = System.Drawing.Color.White;
-            this.dgvBaoCaoDanhMuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBaoCaoDanhMuc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaSach,
-            this.TenSach,
-            this.TenDanhMuc,
-            this.DonViTinh,
-            this.GiaBan,
-            this.SoLuongTon});
-            this.dgvBaoCaoDanhMuc.Location = new System.Drawing.Point(9, 37);
-            this.dgvBaoCaoDanhMuc.MultiSelect = false;
-            this.dgvBaoCaoDanhMuc.Name = "dgvBaoCaoDanhMuc";
-            this.dgvBaoCaoDanhMuc.ReadOnly = true;
-            this.dgvBaoCaoDanhMuc.RowHeadersVisible = false;
-            this.dgvBaoCaoDanhMuc.RowHeadersWidth = 51;
-            this.dgvBaoCaoDanhMuc.RowTemplate.Height = 24;
-            this.dgvBaoCaoDanhMuc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBaoCaoDanhMuc.Size = new System.Drawing.Size(937, 216);
-            this.dgvBaoCaoDanhMuc.TabIndex = 0;
-            // 
-            // MaSach
-            // 
-            this.MaSach.HeaderText = "Mã sách";
-            this.MaSach.MinimumWidth = 6;
-            this.MaSach.Name = "MaSach";
-            this.MaSach.ReadOnly = true;
-            // 
-            // TenSach
-            // 
-            this.TenSach.HeaderText = "Tên sách";
-            this.TenSach.MinimumWidth = 6;
-            this.TenSach.Name = "TenSach";
-            this.TenSach.ReadOnly = true;
-            // 
-            // TenDanhMuc
-            // 
-            this.TenDanhMuc.HeaderText = "Tên danh mục";
-            this.TenDanhMuc.MinimumWidth = 6;
-            this.TenDanhMuc.Name = "TenDanhMuc";
-            this.TenDanhMuc.ReadOnly = true;
-            // 
-            // DonViTinh
-            // 
-            this.DonViTinh.HeaderText = "Đơn vị tính";
-            this.DonViTinh.MinimumWidth = 6;
-            this.DonViTinh.Name = "DonViTinh";
-            this.DonViTinh.ReadOnly = true;
-            // 
-            // GiaBan
-            // 
-            this.GiaBan.HeaderText = "Giá bán";
-            this.GiaBan.MinimumWidth = 6;
-            this.GiaBan.Name = "GiaBan";
-            this.GiaBan.ReadOnly = true;
-            // 
-            // SoLuongTon
-            // 
-            this.SoLuongTon.HeaderText = "Số lượng tồn";
-            this.SoLuongTon.MinimumWidth = 6;
-            this.SoLuongTon.Name = "SoLuongTon";
-            this.SoLuongTon.ReadOnly = true;
+            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(34, 116);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ReportSource = this.rptBaoCaoDanhMuc1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(919, 425);
+            this.crystalReportViewer1.TabIndex = 1;
             // 
             // frmBaoCaoDanhMuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 553);
-            this.Controls.Add(this.grpKetQua);
-            this.Controls.Add(this.grpDieuKien);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBaoCaoDanhMuc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Báo cáo theo danh mục sản phẩm";
-            this.grpDieuKien.ResumeLayout(false);
-            this.grpDieuKien.PerformLayout();
-            this.grpKetQua.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCaoDanhMuc)).EndInit();
+            this.Load += new System.EventHandler(this.frmBaoCaoDanhMuc_Load);
             this.ResumeLayout(false);
 
         }
@@ -229,20 +75,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox grpDieuKien;
-        private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnXuatExcel;
-        private System.Windows.Forms.Button btnLamMoi;
-        private System.Windows.Forms.Button btnThongKe;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox grpKetQua;
-        private System.Windows.Forms.DataGridView dgvBaoCaoDanhMuc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenDanhMuc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTon;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private btl_wf.rptBaoCaoDanhMuc rptBaoCaoDanhMuc1;
     }
 }

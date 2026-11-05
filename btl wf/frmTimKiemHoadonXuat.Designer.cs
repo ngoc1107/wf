@@ -43,12 +43,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.grpKetQua = new System.Windows.Forms.GroupBox();
             this.dgvHoaDonXuat = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.MaHDXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpTimKiem.SuspendLayout();
             this.grpKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDonXuat)).BeginInit();
@@ -82,6 +82,7 @@
             this.btnThoat.TabIndex = 10;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLamMoi
             // 
@@ -91,6 +92,7 @@
             this.btnLamMoi.TabIndex = 9;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnTimKiem
             // 
@@ -100,6 +102,7 @@
             this.btnTimKiem.TabIndex = 8;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // dtpDenNgay
             // 
@@ -206,17 +209,6 @@
             this.dgvHoaDonXuat.Size = new System.Drawing.Size(790, 133);
             this.dgvHoaDonXuat.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(260, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(377, 32);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "TÌM KIẾM HÓA ĐƠN XUẤT";
-            // 
             // MaHDXuat
             // 
             this.MaHDXuat.HeaderText = "Mã hóa đơn xuất";
@@ -252,6 +244,17 @@
             this.Tongtien.Name = "Tongtien";
             this.Tongtien.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(260, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(377, 32);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "TÌM KIẾM HÓA ĐƠN XUẤT";
+            // 
             // frmTimKiemHoadonXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -264,6 +267,7 @@
             this.Name = "frmTimKiemHoadonXuat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm hóa đơn xuất";
+            this.Load += new System.EventHandler(this.frmTimKiemHoadonXuat_Load);
             this.grpTimKiem.ResumeLayout(false);
             this.grpTimKiem.PerformLayout();
             this.grpKetQua.ResumeLayout(false);

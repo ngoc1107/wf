@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="btl wf/btl wf.csproj" Id="e3249ff2-6484-4e37-9a2d-7d581dc9217e" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="btl wf/btl wf.csproj" Id="e3249ff2-6484-4e37-9a2d-7d581dc9217e">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
 </Solution>

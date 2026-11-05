@@ -74,7 +74,7 @@
             this.grpTimKiem.Controls.Add(this.label2);
             this.grpTimKiem.Location = new System.Drawing.Point(38, 66);
             this.grpTimKiem.Name = "grpTimKiem";
-            this.grpTimKiem.Size = new System.Drawing.Size(782, 217);
+            this.grpTimKiem.Size = new System.Drawing.Size(855, 217);
             this.grpTimKiem.TabIndex = 1;
             this.grpTimKiem.TabStop = false;
             this.grpTimKiem.Text = "Điều kiện tìm kiếm:";
@@ -87,6 +87,7 @@
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLamMoi
             // 
@@ -96,6 +97,7 @@
             this.btnLamMoi.TabIndex = 5;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnTimKiem
             // 
@@ -105,6 +107,7 @@
             this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTuKhoa
             // 
@@ -149,7 +152,7 @@
             this.grpKetQua.Controls.Add(this.dgvNhanVien);
             this.grpKetQua.Location = new System.Drawing.Point(38, 290);
             this.grpKetQua.Name = "grpKetQua";
-            this.grpKetQua.Size = new System.Drawing.Size(754, 171);
+            this.grpKetQua.Size = new System.Drawing.Size(855, 301);
             this.grpKetQua.TabIndex = 2;
             this.grpKetQua.TabStop = false;
             this.grpKetQua.Text = "Kết quả tìm kiếm";
@@ -176,7 +179,7 @@
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(754, 133);
+            this.dgvNhanVien.Size = new System.Drawing.Size(849, 263);
             this.dgvNhanVien.TabIndex = 0;
             // 
             // MaNV
@@ -232,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 473);
+            this.ClientSize = new System.Drawing.Size(919, 616);
             this.Controls.Add(this.grpKetQua);
             this.Controls.Add(this.grpTimKiem);
             this.Controls.Add(this.label1);
@@ -240,6 +243,7 @@
             this.Name = "frmTimKiemNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm Nhân Viên";
+            this.Load += new System.EventHandler(this.frmTimKiemNhanVien_Load);
             this.grpTimKiem.ResumeLayout(false);
             this.grpTimKiem.PerformLayout();
             this.grpKetQua.ResumeLayout(false);

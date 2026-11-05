@@ -53,19 +53,13 @@ namespace btl_wf
 
         private void doanhThuTheoNàyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDoanhThuTheoNgay f = new frmDoanhThuTheoNgay();
-            f.ShowDialog();
+            
         }
 
         private void sảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBaoCaoSanPhamTonKho f = new frmBaoCaoSanPhamTonKho();
             f.ShowDialog();
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void fmtrangchu_Load(object sender, EventArgs e)
@@ -182,14 +176,12 @@ namespace btl_wf
 
         private void sảnPhẩmBánChạyNhấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmThongKeSPBanChayNhat f = new frmThongKeSPBanChayNhat();
-            f.ShowDialog();
+            
         }
 
         private void sảnPhẩmTồnKhoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmThongKeSanPhamTonKho f = new frmThongKeSanPhamTonKho();
-            f.ShowDialog();
+           
         }
 
         private void tìmKiếmSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
@@ -237,20 +229,41 @@ namespace btl_wf
 
         private void doanhThuTheoThángToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDoanhThuTheoThang f = new frmDoanhThuTheoThang();
-            f.ShowDialog();
+            
         }
 
         private void doanhThuTheoQuýToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDoanhThuTheoQuy f = new frmDoanhThuTheoQuy();
-            f.ShowDialog();
+           
         }
 
         private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmTroGiup f = new frmTroGiup();
             f.ShowDialog();
+        }
+
+        private void tsbsanpham_Click(object sender, EventArgs e)
+        {
+            frmQuanLySanPham frm = new frmQuanLySanPham();
+            frm.Show();
+        }
+
+        private void tsbkhachhang_Click(object sender, EventArgs e)
+        {
+            frmquanlykhachhang frm= new frmquanlykhachhang();
+            frm.Show();
+        }
+
+        private void tsbnguoidung_Click(object sender, EventArgs e)
+        {
+            frmquanlynguoidung frm = new frmquanlynguoidung();
+            frm.Show();
+        }
+
+        private void tsbthongke_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

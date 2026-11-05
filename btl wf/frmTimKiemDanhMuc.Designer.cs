@@ -82,6 +82,7 @@
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLamMoi
             // 
@@ -91,6 +92,7 @@
             this.btnLamMoi.TabIndex = 5;
             this.btnLamMoi.Text = "Làm Mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnTimKiem
             // 
@@ -100,6 +102,7 @@
             this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTuKhoa
             // 
@@ -170,6 +173,7 @@
             // 
             // MaDanhMuc
             // 
+            this.MaDanhMuc.DataPropertyName = "Mã danh mục";
             this.MaDanhMuc.HeaderText = "Mã danh mục";
             this.MaDanhMuc.MinimumWidth = 6;
             this.MaDanhMuc.Name = "MaDanhMuc";
@@ -177,6 +181,7 @@
             // 
             // TenDanhMuc
             // 
+            this.TenDanhMuc.DataPropertyName = "Tên danh mục";
             this.TenDanhMuc.HeaderText = "Tên danh mục";
             this.TenDanhMuc.MinimumWidth = 6;
             this.TenDanhMuc.Name = "TenDanhMuc";
@@ -194,6 +199,7 @@
             this.Name = "frmTimKiemDanhMuc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm Kiếm theo Danh Mục";
+            this.Load += new System.EventHandler(this.frmTimKiemDanhMuc_Load);
             this.grpTimKiem.ResumeLayout(false);
             this.grpTimKiem.PerformLayout();
             this.grpKetQua.ResumeLayout(false);

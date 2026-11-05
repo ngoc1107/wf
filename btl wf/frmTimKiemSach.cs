@@ -43,7 +43,7 @@ namespace giaodien
             {
                 using (SqlConnection conn = new SqlConnection(connectString))
                 {
-                    string sql = @"SELECT MaSach, TenSach, TheLoai, TacGia, GiaBan FROM Sach";
+                    string sql = @"SELECT MaSach, TenSach, MaDM, TacGia, GiaBan FROM Sach";
                     SqlDataAdapter da = new SqlDataAdapter(sql, conn);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
